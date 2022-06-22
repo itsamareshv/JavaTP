@@ -21,9 +21,14 @@ public class exam_ternary {
 		System.out.println("Enter the total Marks");
 		int marks = sc.nextInt();
 		
-		String s = (marks>=60)?(marks>=90)? "Distinction":"Pass":"Fail";
-		System.out.println(s);
+//		String s = (marks>=60)?(marks>=90)? "Distinction":"Pass":"Fail";
+//		System.out.println(s);
 
+		
+		
+		
+		String s = (marks>90)? "Distinction" : (marks<60)? "Fail" : "Pass";
+		System.out.println(s);
 	}
 
 }

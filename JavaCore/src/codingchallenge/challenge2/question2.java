@@ -15,8 +15,7 @@ You should use while loop.
 	System.out.println("Enter the upper limit");
 	int n =sc.nextInt();
 	int sum=0;
-	
-	
+
 	while(n>0) {
 		sum=sum+n;
 		System.out.println(sum);
