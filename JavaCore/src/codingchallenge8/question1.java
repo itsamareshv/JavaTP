@@ -41,8 +41,6 @@ public class question1 {
 		char q=sc.next().charAt(0);
 		
 		
-		
-		
 		char ans1='y',ans2='n';
 		
 		if(q!=ans1 && q!=ans2) {
