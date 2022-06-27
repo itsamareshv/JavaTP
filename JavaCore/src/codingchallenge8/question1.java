@@ -31,35 +31,36 @@ public class question1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		Scanner sc = new Scanner(System.in);
-		
-		while(true) {
-			
-		System.out.println("please enter YES or NO");
-		
-		char q=sc.next().charAt(0);
-		
-		
-		char ans1='y',ans2='n';
-		
-		if(q!=ans1 && q!=ans2) {
-			System.out.println("Please provide correct inputs" );
-			continue;
-		}
-		
-		
-		
-		if(q==ans1) {
-			System.out.println("Welcome!");
-			break;
-		}else {
-			System.out.println("Good Bye!");
-			break;
-			
-		}
-		
-		
+
+		while (true) {
+
+			System.out.println("please enter Y or N");
+
+			String q = sc.nextLine();
+			if (q.length() > 1) {
+
+				System.out.println("Enter Single Character");
+				System.out.println("-----------------");
+				continue;
+			}
+			char c = q.charAt(0);
+
+			if ((c != 'y' && c != 'Y') && (c != 'n' && c != 'N')) {
+				System.out.println("Please provide correct inputs");
+				continue;
+			}
+
+			if (c == 'y' || c == 'Y') {
+				System.out.println("Welcome!");
+				break;
+			} else if (c == 'n' || c == 'N') {
+				System.out.println("Good Bye!");
+				break;
+
+			}
+
 		}
 	}
 
