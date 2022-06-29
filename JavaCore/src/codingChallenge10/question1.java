@@ -8,13 +8,9 @@ package codingChallenge10;
 
 public class question1 {
 
-	public int max(int arr[]) {
-
-		return;
-	}
 	
 	public static void main(String[] args) {
-	int arr[]=
+	
 
 	}
 
