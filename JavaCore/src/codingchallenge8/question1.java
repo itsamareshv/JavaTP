@@ -58,6 +58,7 @@ public class question1 {
 			} else if (c == 'n' || c == 'N') {
 				System.out.println("Good Bye!");
 				break;
+				
 
 			}
 
