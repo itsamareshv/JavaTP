@@ -1,7 +1,8 @@
+package assignment_problem;
 import java.util.Iterator;
 import java.util.Stack;
 
-public class StringExpression {
+public class working {
 
 	public static double cal(char x, double y, double z) {
 		double res = 0;
@@ -24,7 +25,7 @@ public class StringExpression {
 		}
 		return res;
 	}
-
+	
 	public static void main(String[] args) {
 		String str = "(1*2+3*4)";
 
@@ -50,6 +51,8 @@ public class StringExpression {
 
 		System.out.println("Numbers" + ar);
 
+		
+		
 		switch (ar.size()) {
 		case 2:
 			double fin = StringExpression.cal(op.pop(), ar.pop(), ar.pop());
@@ -58,8 +61,8 @@ public class StringExpression {
 		case 4:
 			double fin1 = StringExpression.cal(op.pop(), ar.pop(), ar.pop());
 			double fin2 = StringExpression.cal(op.firstElement(), ar.pop(), ar.pop());
-			double finalAns = StringExpression.cal(op.pop(), fin1, fin2);
-			System.out.println("Result = " + finalAns);
+			double fval = StringExpression.cal(op.pop(), fin1, fin2);
+			System.out.println("Result = " + fval);
 			break;
 
 		default:
