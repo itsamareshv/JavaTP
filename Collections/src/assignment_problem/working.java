@@ -27,7 +27,7 @@ public class working {
 	}
 	
 	public static void main(String[] args) {
-		String str = "(1*2+3*4)";
+		String str = "((2+1)*(3+4))";
 
 		Stack<Double> ar = new Stack<Double>();
 		Stack<Character> op = new Stack<Character>();
